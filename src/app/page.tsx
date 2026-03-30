@@ -16,7 +16,8 @@ export default function Home() {
       <Features />
       <Modules />
       <Testimonials />
+      <CTA />
        <Footer />
     </main>
   );
-} <CTA />
+} 

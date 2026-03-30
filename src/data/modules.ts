@@ -39,7 +39,7 @@ export const modules = [
     title: "Admissions & Enrollment Management",
     description:
       "Streamlining the journey from prospective applicant to enrolled student with automated workflows.",
-    image: "/images/modules/curriculum.png",
+    image: "/images/modules/curriculum2.png",
     price: "₦599/month"
   },
   
@@ -55,7 +55,7 @@ export const modules = [
     title: "Online Payment Portal",
     description:
       "Allow parents pay online easily.",
-    image: "/images/modules/payment.png",
+    image: "/images/modules/payment2.png",
     price: "₦599/month"
   },
   {
