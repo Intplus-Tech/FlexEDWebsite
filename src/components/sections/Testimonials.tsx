@@ -31,7 +31,7 @@ export default function Testimonials() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="py-24 bg-[#f7f7fb]">
+    <section className="py-24 bg-[#F6F5FB]">
       <Container>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           
