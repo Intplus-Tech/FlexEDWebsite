@@ -11,7 +11,7 @@ export default function CTA() {
         <div className="grid md:grid-cols-2 border-[2px] rounded-2xl overflow-hidden border-[#DEDEDE] space-y-6 bg-[#FFFFFF]">
           
           {/* Left */}
-          <div className="p-8 border-r">
+          <div className="p-8 border-r h-full border-[#DEDEDE]">
             <h3 className="text-[32px] font-medium text-[#131313] ">
               Schedule a call
             </h3>
