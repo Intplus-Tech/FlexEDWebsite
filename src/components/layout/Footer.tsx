@@ -88,7 +88,7 @@ export default function Footer() {
             <p>Privacy & Cookies policy</p>
           </div>
 
-          <p className="mt-4 md:mt-0">hello@flexedsystems.com</p>
+          <p className="mt-4 md:mt-0">contactus@flexedsystem.com</p>
         </div>
       </Container>
     </footer>

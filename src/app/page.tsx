@@ -13,11 +13,15 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Problem />
-      <Features />
+      <div id="Features">
+        <Features />
+      </div>
       <Modules />
       <Testimonials />
-      <CTA />
-       <Footer />
+      <div id="CTA">
+        <CTA />
+      </div>
+      <Footer />
     </main>
   );
-} 
+}

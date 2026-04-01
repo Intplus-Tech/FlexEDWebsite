@@ -1,3 +1,6 @@
+"use client";
+
+
 import Container from "../ui/Container";
 
 export default function CTA() {
@@ -20,7 +23,10 @@ export default function CTA() {
               We are gladly helping School Administrators to get started.
             </p>
 
-            <button className="mt-6 bg-purple-600 text-white px-5 py-2.5 rounded-lg text-sm">
+            <button
+              onClick={() => window.open("https://wa.me/message/N3YXQJLPHHFRL1", "_blank")}
+              className="mt-6 bg-purple-600 text-white px-5 py-2.5 rounded-lg text-sm hover:bg-purple-700 transition"
+            >
               Schedule a Call
             </button>
           </div>
@@ -38,7 +44,7 @@ export default function CTA() {
               </span>
             </p>
 
-            <button className="mt-6 bg-purple-600 text-white px-5 py-2.5 rounded-lg text-sm flex items-center gap-2">
+            <button className="mt-6 bg-purple-600 text-white px-5 py-2.5 rounded-lg text-sm flex items-center gap-2 hover:bg-purple-700 transition">
               Get Started →
             </button>
           </div>
