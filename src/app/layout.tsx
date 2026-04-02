@@ -1,5 +1,13 @@
 import "./globals.css";
 
+export const metadata = {
+  title: "FlexED",
+  description: "FlexED - Smart School Management",
+  icons: {
+    icon: "/FlexEDlogo.svg",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
