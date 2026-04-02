@@ -2,8 +2,10 @@
 
 import Container from "../ui/Container";
 import { LifeBuoy, Menu, X } from "lucide-react";
-import Image from "next/image";
+
 import { useState } from "react";
+import Link from "next/link";
+import FlexEDLogo from "@/assets/svg/FlexEdlogo.svg";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -23,16 +25,13 @@ export default function Navbar() {
           {/* Main Navbar Box */}
           <div className="mx-auto w-full max-w-3xl flex items-center justify-between border border-[#E8E8E8] rounded-xl p-2 px-4">
             {/* Logo */}
-            <div className="flex items-center gap-2">
-              <Image
-                src="/images/logos/flexed-image.png"
-                width={40}
-                height={40}
-                alt="FlexED Logo"
-                className="rounded-xl w-10 h-10"
-              />
-              <h1 className="font-bold text-[16px] text-[#823FD6]">FlexED</h1>
-            </div>
+              <div className="flex items-center ">
+  <FlexEDLogo className="w-10 h-10 cursor-pointer" />
+  <div className="flex flex-col">
+    <h1 className="font-bold text-[16px] text-[#823FD6]">FlexED</h1>
+    <p className="text-[12px] text-gray-500">By Int+</p>
+  </div>
+</div>
 
             {/* Desktop Links */}
             <div className="hidden md:flex gap-6 items-center">
@@ -53,20 +52,22 @@ export default function Navbar() {
             </div>
 
             {/* Create Account Button */}
-            <button className="bg-purple-600 text-white w-[132px] px-4 py-2 rounded-lg text-[14px] font-medium">
-              Create Account
-            </button>
+            <Link href="/auth/register">
+              <button className="bg-purple-600 text-white w-[132px] px-4 py-2 rounded-lg text-[14px] font-medium">
+                Create Account
+              </button>
+            </Link>
+
           </div>
 
           {/* Sign up link (next to border container) */}
           <div className="hidden md:flex ml-4 items-center">
-            <a
-              href="#signup"
-              className="text-sm font-medium text-[#606060] hover:text-black transition"
-            >
-              Sign up
-            </a>
-          </div>
+  <Link href="/auth/login">
+    <button className="text-sm font-medium text-[#606060] hover:text-purple-600 hover:underline transition">
+      Sign in
+    </button>
+  </Link>
+</div>
 
           {/* Support */}
           <div className="ml-6 hidden md:flex items-center gap-2 text-sm font-medium text-[#606060] cursor-pointer hover:text-black transition">

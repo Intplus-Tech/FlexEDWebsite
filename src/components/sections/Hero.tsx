@@ -1,6 +1,12 @@
 import Container from "../ui/Container";
 import Image from "next/image";
+
+import AwsLogo from "@/assets/svg/aws.svg";
+import PaystackLogo from "@/assets/svg/paystack.svg";
+import SquadLogo from "@/assets/svg/squad.svg";
+import LastPartnerLogo from "@/assets/svg/lastpartner.svg";
 import { ArrowRight } from 'lucide-react';
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -24,29 +30,36 @@ export default function Hero() {
             </p>
             </div>
             
-             <button className="mt-6 bg-black text-white px-6 py-3 rounded-full flex gap-2">
+             {/* <button className="mt-6 bg-black text-white px-6 py-3 rounded-full flex gap-2">
              <span>Onboard My School — ₦0 Setup</span>  <ArrowRight />
-            </button>
+            </button> */}
+            <Link
+  href="/auth/register"
+  className="mt-6 bg-black text-white px-6 py-3 rounded-full flex gap-2 w-fit"
+>
+  <span>Onboard My School — ₦0 Setup</span>
+  <ArrowRight />
+</Link>
 
            
            <div>
              <p>Partners</p>
-            <div className="flex gap-3 mt-6 flex-wrap">
+            <div className="flex items-center gap-2 mt-6 flex-wrap">
   
-  <div className="border border-gray-300 rounded-full p-2">
-    <img src="/images/logos/paystack.png" className="h-6 object-contain" />
+  <div className="rounded-xl">
+    <AwsLogo className="h-10 w-auto" />
   </div>
 
-  <div className="border border-gray-300 rounded-full p-2">
-    <img src="/images/logos/squad.png" className="h-6 object-contain" />
+  <div className="rounded-xl">
+    <SquadLogo className="h-10 w-auto" />
   </div>
 
-  <div className="border border-gray-300 rounded-full p-2">
-    <img src="/images/logos/aws.png" className="h-6 object-contain" />
+  <div className="rounded-xl">
+    <PaystackLogo className="h-10 w-auto" />
   </div>
 
-  <div className="border border-gray-300 rounded-full p-2">
-    <img src="/images/logos/flutterwave.png" className="h-6 object-contain" />
+  <div className="rounded-xl">
+    <LastPartnerLogo className="h-10 w-auto" />
   </div>
 
 </div>
