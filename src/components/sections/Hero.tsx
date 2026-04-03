@@ -34,7 +34,8 @@ export default function Hero() {
              <span>Onboard My School — ₦0 Setup</span>  <ArrowRight />
             </button> */}
             <Link
-  href="/auth/register"
+  // href="/auth/register"
+  href="https://app.flexedsystem.com/auth/sign-up"
   className="mt-6 bg-black text-white px-6 py-3 rounded-full flex gap-2 w-fit"
 >
   <span>Onboard My School — ₦0 Setup</span>

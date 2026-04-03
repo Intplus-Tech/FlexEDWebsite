@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 
 import Container from "../ui/Container";
 
@@ -43,10 +44,13 @@ export default function CTA() {
                 FlexED
               </span>
             </p>
-
+              <Link
+              href="https://app.flexedsystem.com/auth/sign-up"
+              >
             <button className="mt-6 bg-purple-600 text-white px-5 py-2.5 rounded-lg text-sm flex items-center gap-2 hover:bg-purple-700 transition">
               Get Started →
             </button>
+            </Link>
           </div>
 
         </div>

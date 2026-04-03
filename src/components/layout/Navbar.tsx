@@ -52,7 +52,7 @@ export default function Navbar() {
             </div>
 
             {/* Create Account Button */}
-            <Link href="/auth/register">
+            <Link href="https://app.flexedsystem.com/auth/sign-up">
               <button className="bg-purple-600 text-white w-[132px] px-4 py-2 rounded-lg text-[14px] font-medium">
                 Create Account
               </button>
@@ -62,7 +62,7 @@ export default function Navbar() {
 
           {/* Sign up link (next to border container) */}
           <div className="hidden md:flex ml-4 items-center">
-  <Link href="/auth/login">
+  <Link href="https://app.flexedsystem.com/auth/sign-in">
     <button className="text-sm font-medium text-[#606060] hover:text-purple-600 hover:underline transition">
       Sign in
     </button>
@@ -100,15 +100,17 @@ export default function Navbar() {
             >
               Contact
             </a>
-            <a
-              href="#signup"
+            <Link
+              href="https://app.flexedsystem.com/auth/sign-in"
               className="text-sm font-medium text-[#606060] hover:text-black transition"
             >
               Sign up
-            </a>
+            </Link>
+            <Link href="https://app.flexedsystem.com/auth/sign-up">
             <button className="bg-purple-600 text-white px-4 py-2 rounded-lg text-[14px] font-medium mt-2">
               Create Account
             </button>
+            </Link>
             <div className="flex items-center gap-2 text-sm font-medium text-[#606060] cursor-pointer hover:text-black transition mt-2">
               <LifeBuoy size={18} />
               <span>Support</span>
