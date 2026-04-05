@@ -24,7 +24,7 @@ export default function Modules() {
     <h3 className="font-semibold">{module.title}</h3>
     <p className="text-gray-600 text-sm">{module.description}</p>
   </div>
-  <p className="font-semibold">{module.price}</p>
+ 
 </div>
             </div>
           ))}
