@@ -4,7 +4,10 @@ export const metadata = {
   title: "FlexED",
   description: "FlexED - Smart School Management",
   icons: {
-    icon: "/FlexEDlogo.svg",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
   },
 };
 
